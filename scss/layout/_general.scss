@@ -1,0 +1,68 @@
+body{
+    background-color:$color-principal;
+}
+    
+.border {
+    border: 1px solid black;
+    border-radius: .3em;
+}
+
+#tituloGral {
+    display: flex;
+    flex-direction: column;
+    justify-content:first baseline;
+    align-items: center;
+    padding: 10px;
+    font-family: $font-family-general;
+    font-weight: bolder;
+    font-size: large;
+    //  margin: 5px;
+    color: #0564b3;
+    border: $box-general;
+}
+
+#leyenda {
+    font-family: $font-family-general;
+    font-size: large;
+    font-weight: bolder;
+    color:rgb(91, 112, 20);
+    margin: 5px;
+}
+
+#leyendaBold {
+    font-family: $font-family-general;
+    font-size:x-large;
+    font-weight: bolder;
+    color:rgb(112, 31, 20);
+    margin: 5px;
+}
+
+#textoGeneral  {
+    font-family: $font-family-general;
+    font-size: medium;
+    color:rgb(4, 4, 4);
+}
+
+.subtitulos {
+    font-family: $font-family-general;
+    font-weight: bolder;
+    font-size:large;
+    margin: 10px;
+    color:$color_subtitulos;
+}
+
+.subtitulosAdicionales {
+    font-family: $font-family-general;
+    font-weight: bolder;
+    font-size:large;
+    margin: 10px;
+    color:$color_subtitulos_adicional;
+}
+
+.parrafoColor {
+    font-family: $font-family-general;
+    font-weight: bolder;
+    font-size: large;
+    margin: 10px;
+    color: $color_subtitulos;
+}

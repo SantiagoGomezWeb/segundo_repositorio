@@ -1,0 +1,14 @@
+.letraFooter {
+    font-family: $font-family-general;
+    font-weight: bolder;
+    font-size:medium;
+    margin: 10px;
+    color:map-get($colors,letra-footer);
+  }
+
+  .redes {
+    opacity: 0.5;
+    &:hover{
+        opacity: 1.0;
+        }            
+    }
