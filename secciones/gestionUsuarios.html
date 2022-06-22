@@ -7,6 +7,7 @@
     <meta name="description" content="Sistema de Gestion de Cotizaciones de Protesis y Medicamentos - Gestion Usuarios">
     <meta name="keywords" content="consejo, ciencias, economicas, cotizaciones, concursos, protesis, medicamentos">
     <link rel="icon" href="..\img\cpce.ico" type="img"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
     rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
@@ -23,7 +24,7 @@
 <body>
     <header class="container-fluid">
         <section class="row">
-            <div class="col-lg-12">
+            <div class="col-md-11">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <div class="container">
                         <a class="navbar-brand" href="../index.html"><img src="../img/logo3.png" alt="CPCE"></a>
@@ -52,78 +53,115 @@
                     </div>
                 </nav>
             </div>
+            <div class="col-md-1 p-2 d-flex align-items-center">
+                <button type="button" class="btn btn-primary me-3">
+                    Cerrar Sesión
+                </button>
+            </div>             
 
         </section>
     </header>   
      
     <main>
-        <!-- <section id="inputDatos" class="container"> -->
         <section class="container">
             <section class="row">
-                <section class="col-lg-12 p-2">
+                <section class="col-md-12 p-2">
                     <div id="tituloGral">
                         <h1 style="text-align:center">Gestion de Usuarios</h1>
                     </div>
                 </section>
-            </section>            
-            <section id="inputDatos" class="row">
-                <section class="col-lg-12 p-2">
+            </section> 
+            <section class="row">
+                <section class="col-md-6 p-1 text-center" style="background-color: rgb(193, 207, 216);">
+                    <div class="card" style="width: 30rem;">
+                        <img class="card-img-top" src="../img/gestion_usuarios.png" alt="Card image cap">
+                        <div class="card-body">
+                        <h5 class="card-title">Que podemos hacer desde esta página?</h5>
+                        <p class="card-text">Como administrador, puede crear nuevas cuentas de usuario, editar los permisos de la cuenta, enviar correos electrónicos de restablecimiento de la contraseña, eliminar usuarios, etc.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><a href="#">Creación de nuevos Usuarios</a></li>
+                            <li class="list-group-item"><a href="#">Gestión de Usuarios Existentes</a></li>
+                            <li class="list-group-item"><a href="#">Envio de mails para reestablecimiento de contraseña</a></li>
+                        </ul>
+                        <div class="card-body">
+                        <a href="#" class="btn btn-primary">Cerrar Sesión</a>
+                        </div>
+                    </div>   
+                </section> 
+                <section class="col-md-6 p-2 text-center" style="background-color: rgb(193, 207, 216);">     
+                    <h2>Creación de Nuevos Usuarios</h2>
+                    <div>
+                        <p>En esta opción se ingresan los datos requeridos para dar de alta un nuevo usuario, editar datos anteriormente cargados.<br>Estos datos son Auditados</p>
+                    </div>
+                    <img src="../img/usuario.png" alt="usuariologeado" />
                     <form action="#" target="" method="get" name="formDatosPersonales">
 
-                        <label for="cuit">C.U.I.T.</label>
-                        <input type="text" name="cuit" id="cuit" placeholder="99-9999999-9"/>
+                        <label for="apellidonombre">Nombre</label>
+                        <input type="text" name="apellidonombre" id="apellidonombre" placeholder="Apellido y Nombre"/>
+
+                        <label for="dni">DNI</label>
+                        <input type="text" name="dni" id="dni" placeholder="9999999"/>
                     
-                        <label for="razonsocial">Razón Social</label>
-                        <input type="text" name="razonsocial" id="razonsocial" placeholder="Razón Social"/>
+                        <label for="alias">Alias</label>
+                        <input type="text" name="alias" id="alias" placeholder="Alias"/>
                     
-                        <label for="email">Email</label>
+                        <label for="email">eMail</label>
                         <input type="email" name="email" id="email" placeholder="email" required />
                     
                         <label for="contraseña">Contraseña</label>
                         <input type ="password" name="contraseña" id="contraseña" placeholder="********"/>
                     
-                        <input type="submit" name="enviar" value="enviar datos"/>
+                        <input type="submit" name="enviar" value="Enviar Datos"/>
                     </form>
                 </section>
             </section>
         </section>
 
-        <section id="panelCaptcha" class="container">
-            <div class="g-recaptcha" data-sitekey="TU CLAVE DEL SITIO AQUÍ" data-callback="correctCaptcha"></div>
-        </section>
     </main>
 
-    <footer class="container">
-        <section class="row">
-            <div class="col-md-3 p-2">
-                <!-- <p class="letraFooter">Hipolito Irigoyen 490 </p> -->
-                <a href="https://www.google.com/maps/search/?api=1&query=19.10711285128303,-98.27150480793455&zoom=20
-" target="_blank" style="color: rgb(16, 17, 16);">Hipolito Irigoyen 490</a>
+    <footer>
+        <div class="container">
+            <div class="secc sobrenosotros">
+                <h2>Sobre Nosotros</h2>
+                <p>A traves de esta página el CPCE pone a disposición una Plataforma para la Gestión de Cotizaciones de Prótesis y Medicamentos de Alto Costo</p>
+                <ul class="redesSociales">
+                    <li><a href="https://twitter.com/santiaguitog" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter text-dark mx-1"></i></a></li>
+                    <li><a href="https://www.facebook.com/santiago.gomez.144181/" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook text-dark mx-1"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/santiago-daniel-gomez-33600a15/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin text-dark mx-1"></i></a></li>
+                    <li><a href="https://www.instagram.com/santi_._gomez/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram text-dark mx-1"></i></a></li>
+                </ul>
             </div>
-            <div class="col-md-3 p-2">
-                <a href="mailto:info@cpcecba.org.ar?Subject=maildesdelaWeb">info@cpcecba.org.ar</a>                
-                <!-- <p class="letraFooter">info@cpcecba.org.ar</p> -->
-            </div>
-            <div class="col-md-3 p-2">
-                <a href="https://wa.me/5493516117118">+ 54 9 351 4688330</a>
-                <!-- <p class="letraFooter">+ 54 9 351 4688330</p> -->
-            </div>
-            <div class="col-md-3 p-2">
-                <section class="row">
-                    <div class="col-md-3"> 
-                        <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
-                    </div>
-                    <div class="col-md-3"> 
-                        <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
-                    </div>
-                    <div class="col-md-3"> 
-                        <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
-                    </div>
-                    <div class="col-md-3"> 
-                        <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
-                    </div>
-            </div>
-       </section>
+            <div class="secc accesosDirectos">
+                <h2>Secciones</h2>
+                <ul>
+                    <li><a href="./secciones/concursos.html">Concursos</a></li>
+                    <li><a href="./secciones/cotizaciones.html">Cotizaciones</a></li>
+                    <li><a href="./secciones/seguimiento.html">Seguimiento</a></li>            
+                    <li><a href="./secciones/gestionUsuarios.html">Gestion Usuarios</a></li>            
+                </ul>
+            </div>    
+            <div class="secc contacto">
+                <h2>Contacto</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span>Hipótito Irigoyen 490<br>
+                            Córdoba, X5000JHR<br>Argentina
+                        </span>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        <p><a href="tel:+5494688300">+54 9 4688300</a></p>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <p><a href="mailto:info@cpcecba.org.ar">info@cpcecba.org.ar</a></p>
+                    </li>
+
+                </ul>
+            </div>    
+        </div>
     </footer>
 
 

@@ -1,28 +1,8 @@
-$font-family-general: 'Roboto', sans-serif;
-
-// index.html
-// .carousel-inner img {
-//     width: 500px;
-//     max-height: 380px;
-// }
-
-// .carousel-inner, .carousel-inner > .item, .carousel-inner > .item > img {
-//     height: 240px;
-// }
-
 // concursos.html
 .requisitos {
     @include tamanios(450px, 200px);
     ol {
         counter-reset: li;
-            // list-style: none;
-            // font: 15px 'trebuchet MS', 'lucida sans';
-            // padding: 0;
-            // margin-bottom: 4em;
-            
-            // ol{
-            //     margin: 0 0 0 1em;
-            // }
         }
     a{
         position: relative;
@@ -40,12 +20,12 @@ $font-family-general: 'Roboto', sans-serif;
             text-decoration:underline;
         }
         &:before{
-            content: counter(li);
+            content: '';
             counter-increment: li;
             position: absolute;
             left: -1.3em;
             top: 50%;
-            margin-top: -1.3em;
+            margin-top: -1em;
             background: #87ceeb;
             height: 2em;
             width: 2em;
@@ -61,12 +41,8 @@ $font-family-general: 'Roboto', sans-serif;
     }
 }  
 
-
-
-
 // cotizaciones.html
 section#panelCentral{
-    // grid-area: panelCentral;
     font-family: $font-family-general;
     background-color: map-get($colors,color-paneles);
     display: flex;
@@ -168,11 +144,10 @@ section#panelDer{
     position: relative;
     display: block;
     font-weight: bolder;
-    padding: .4em .4em .4em 2em;
+    padding: .4em .4em .4em .4em;
     margin: .5em 0;
     background: #FFF;
     color: #444;
-    // text-decoration: none;
     -moz-border-radius: .3em;
     -webkit-border-radius: .3em;
     border-radius: .3em;
@@ -200,7 +175,6 @@ section#seguimientoSecc{
     background-color: map-get($colors,color-paneles);
     display: flex;
     flex-direction: column;
-    /* justify-content:first baseline; */
     align-items: center;
     padding: 10px;
 }
@@ -261,64 +235,61 @@ table {
 
 section#panelAbajo{
     grid-area: panelAbajo;
-    // border: map-get($colors,color-borde) 1px ;
     font-family: $font-family-general;
     background-color: map-get($colors,color-paneles);
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    // border: $box-general;
     }       
 
 
-    // gestionUsuarios.html
-        
-    section#panelCaptcha{
-        grid-area: panelCaptcha;
-        font-family: $font-family-general;
-        background-color: rgb(193, 207, 216);
-        display: flex;
-        flex-direction: column;
-        justify-content:first baseline;
-        align-items: center;
-        padding: 10px;
-    }
+// gestionUsuarios.html
+section#panelCaptcha{
+    grid-area: panelCaptcha;
+    font-family: $font-family-general;
+    background-color: rgb(193, 207, 216);
+    display: flex;
+    flex-direction: column;
+    justify-content:first baseline;
+    align-items: center;
+    padding: 10px;
+}
 
-    form{
-        width:400px;
-        padding:50px;
-        border-radius:10px;
-        margin:auto;
-        background-color:rgb(119, 174, 179);
-        label{
-            width:72px;
-            font-weight:bold;
-            display:inline-block;
-        } 
-        input[type="text"],
-        input[type="email"],
-        input[type="password"]
-        {
-            width:180px;
-            padding:3px 10px;
-            border:1px solid #f6f6f6;
-            border-radius:3px;
-            background-color:#f6f6f6;
-            margin:8px 10px;
-            display:inline-block;
-        }  
-        input[type="submit"]{
-            width:100%;
-            padding:8px 16px;
-            margin-top:32px;
-            border:1px solid #000;
-            border-radius:5px;
-            display:block;
-            color:#fff;
-            background-color:rgb(42, 40, 40);
-        }      
-        input[type="submit"]:hover{
-            cursor:pointer;
-        }                       
-    }
+form{
+    width:450px;
+    padding:50px;
+    border-radius:10px;
+    margin:auto;
+    background-color:rgb(119, 174, 179);
+    label{
+        width:72px;
+        font-weight:bold;
+        display:inline-block;
+    } 
+    input[type="text"],
+    input[type="email"],
+    input[type="password"]
+    {
+        width:180px;
+        padding:3px 10px;
+        border:1px solid #f6f6f6;
+        border-radius:3px;
+        background-color:#f6f6f6;
+        margin:8px 10px;
+        display:inline-block;
+    }  
+    input[type="submit"]{
+        width:100%;
+        padding:8px 16px;
+        margin-top:32px;
+        border:1px solid #000;
+        border-radius:5px;
+        display:block;
+        color:#fff;
+        background-color:rgb(42, 40, 40);
+    }      
+    input[type="submit"]:hover{
+        cursor:pointer;
+    }                       
+}
