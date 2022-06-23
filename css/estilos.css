@@ -4,15 +4,14 @@
   padding: 0;
   box-sizing: border-box; }
 
-#login {
+#tituloGral {
   display: flex;
   flex-direction: column;
   justify-content: first baseline;
   align-items: center;
-  padding: 1px;
-  font-family: "Roboto", sans-serif;
-  font-weight: bolder;
-  font-size: large; }
+  padding: 10px;
+  color: #0564b3;
+  border: 1px solid #008BFF; }
 
 .requisitos {
   width: 450px;
@@ -269,13 +268,6 @@ form {
   form input[type="submit"]:hover {
     cursor: pointer; }
 
-@font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Light.ttf"); }
-
-body {
-  background-color: #e8eeee; }
-
 footer {
   font-family: "Roboto", sans-serif;
   display: grid;
@@ -383,14 +375,21 @@ footer {
     footer .container {
       grid-template-columns: repeat(1, 1fr); } }
 
-comunSubtitulos, #leyenda, #tituloGral, #login, .parrafoColor, .subtitulos, .subtitulosAdicionales {
-  font-family: "Roboto", sans-serif;
-  font-weight: bolder;
-  font-size: large; }
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Light.ttf"); }
+
+body {
+  background-color: #e8eeee; }
 
 .border {
   border: 1px solid black;
   border-radius: .3em; }
+
+comunSubtitulos, #tituloGral, #leyenda, .parrafoColor, .subtitulos, .subtitulosAdicionales {
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  font-size: large; }
 
 section#inputDatos {
   grid-area: inputDatos;
@@ -418,23 +417,6 @@ section#inputDatos {
   font-size: medium;
   color: #040404; }
 
-#tituloGral {
-  display: flex;
-  flex-direction: column;
-  justify-content: first baseline;
-  align-items: center;
-  padding: 10px;
-  color: #0564b3;
-  border: 1px solid #008BFF; }
-
-#login {
-  display: flex;
-  flex-direction: column;
-  justify-content: first baseline;
-  align-items: center;
-  padding: 1px;
-  color: #0564b3; }
-
 .parrafoColor {
   margin: 10px;
   color: #054d89; }
@@ -445,28 +427,6 @@ section#inputDatos {
 .subtitulosAdicionales {
   margin: 10px;
   color: #762f03; }
-
-textarea {
-  width: 100%;
-  height: 100px;
-  border: 1px solid #f6f6f6;
-  border-radius: 3px;
-  background-color: #f6f6f6;
-  margin: 8px 0;
-  resize: none;
-  display: block; }
-
-.letraFooter {
-  font-family: "Roboto", sans-serif;
-  font-weight: bolder;
-  font-size: medium;
-  margin: 10px;
-  color: #000b14; }
-
-.redes {
-  opacity: 0.5; }
-  .redes:hover {
-    opacity: 1.0; }
 
 .nav-link:hover {
   background-color: #dcdcac;
